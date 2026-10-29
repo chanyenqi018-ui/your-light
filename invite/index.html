@@ -19,14 +19,14 @@ a.btn{display:block;text-decoration:none;font-weight:600;font-size:17px;border-r
 <a id="open" class="btn primary" hidden>Add friend in Your Light</a>
 <div id="stores"><p id="storeNote" style="margin:18px 0 4px">Don’t have Your Light yet?</p>
 <a id="ios" class="btn store" href="https://apps.apple.com/app/id6811325600">Download on the App Store</a>
-<a id="android" class="btn store" href="https://play.google.com/store/apps/details?id=com.warrioryenqi.yourlight" hidden>Get it on Google Play</a></div>
+</div>
 <div id="code" class="code" hidden></div>
 <script>
 // Store links: fill in once the app is live on each store.
-const IOS_URL='https://apps.apple.com/app/id6811325600', ANDROID_URL='https://play.google.com/store/apps/details?id=com.warrioryenqi.yourlight';
-document.getElementById('ios').href=IOS_URL;document.getElementById('android').href=ANDROID_URL;
+const IOS_URL='https://apps.apple.com/app/id6811325600';
+document.getElementById('ios').href=IOS_URL;
 const ua=navigator.userAgent, isIOS=/iPhone|iPad|iPod/.test(ua), isAndroid=/Android/.test(ua);
-const ANDROID_LIVE=false; if(isIOS||!ANDROID_LIVE)document.getElementById('android').hidden=true; if(isAndroid&&ANDROID_LIVE)document.getElementById('ios').hidden=true;
+
 const code=(new URLSearchParams(location.search).get('code')||'').toUpperCase();
 if(/^[A-Z2-9]{8}$/.test(code)){
   const app='yourlight://add/'+code, open=document.getElementById('open');
