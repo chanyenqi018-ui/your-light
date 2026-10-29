@@ -3,106 +3,109 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Your Light — Small lights, shared gently</title>
-<meta name="description" content="One small thing a day, together. Your Light for iPhone.">
-<meta name="theme-color" content="#22316A">
+<title>Your Light · Small lights, shared gently</title>
+<meta name="description" content="Your Light is an iPhone app for one small thing a day. Gentle, private, in English, Bahasa Melayu and 简体中文.">
+<meta name="theme-color" content="#F7F6F3">
+<link rel="canonical" href="https://chanyenqi018-ui.github.io/your-light/">
 <link rel="icon" href="assets/your-light-icon-b1.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta property="og:title" content="Your Light — Small lights, shared gently">
-<meta property="og:description" content="One small thing a day, together.">
-<meta property="og:image" content="https://chanyenqi018-ui.github.io/your-light/assets/your-light-icon-b1.png">
+<meta property="og:title" content="Your Light · Small lights, shared gently">
+<meta property="og:description" content="One small thing a day, together. Now on the App Store.">
+<meta property="og:image" content="https://chanyenqi018-ui.github.io/your-light/assets/og.jpg">
+<meta property="og:url" content="https://chanyenqi018-ui.github.io/your-light/">
 <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <style>
-:root{--blue:#33478F;--b1:#3A50A0;--b2:#22316A;--peach:#F1A878;--cream:#FFF6E8;--canvas:#F7F6F3;--warm:#FFF1E8;--ink:#18213A;--mute:#626C80;
+:root{--blue:#33478F;--b2:#22316A;--peach:#F1A878;--cream:#FFF6E8;--canvas:#F7F6F3;--warm:#FFF1E8;--accent:#93532E;--ink:#18213A;--mute:#5E6880;
 --serif:"Gelasio",Georgia,"Times New Roman",serif;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--canvas);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased}
+body{margin:0;color:var(--ink);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+background:
+ radial-gradient(900px 600px at 88% -80px,rgba(241,168,120,.34),rgba(241,168,120,0) 70%),
+ radial-gradient(800px 600px at -10% 18%,rgba(212,220,247,.75),rgba(212,220,247,0) 70%),
+ linear-gradient(180deg,var(--canvas),var(--warm) 60%,var(--canvas))}
 img{display:block;max-width:100%}a{color:inherit}
-.wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 22px}
-h1,h2{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;margin:0}
-em{font-style:italic}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.015em;margin:0;color:var(--blue)}
+em{font-style:italic;color:var(--accent)}
 
-/* hero */
-.hero{position:relative;overflow:hidden;color:var(--cream);
-background:radial-gradient(520px 420px at 82% 18%,rgba(241,168,120,.38),rgba(241,168,120,0) 70%),
-radial-gradient(600px 500px at 8% 100%,rgba(58,80,160,.7),rgba(58,80,160,0) 70%),linear-gradient(165deg,var(--b1),var(--b2) 78%);}
-.hero:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.7;
-background-image:radial-gradient(1.5px 1.5px at 12% 22%,#FFF6E8,transparent),radial-gradient(1.5px 1.5px at 30% 68%,#F1A878,transparent),radial-gradient(1px 1px at 55% 14%,#FFF6E8,transparent),radial-gradient(1.5px 1.5px at 72% 52%,#FFF6E8,transparent),radial-gradient(1px 1px at 90% 80%,#F1A878,transparent),radial-gradient(1px 1px at 44% 90%,#FFF6E8,transparent),radial-gradient(1px 1px at 6% 52%,#F1A878,transparent)}
-nav.top{position:relative;display:flex;align-items:center;justify-content:space-between;padding:calc(18px + env(safe-area-inset-top)) 0 0}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-size:19px;font-weight:600}
-.brand img{width:34px;height:34px;border-radius:9px}
-nav.top .links{display:flex;gap:18px;font-size:14px;opacity:.85}nav.top .links a{text-decoration:none}nav.top .links a:hover{opacity:.7}
-.hero-grid{position:relative;display:grid;gap:36px;padding:44px 0 72px;align-items:center}
-.eyebrow{display:inline-block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--peach);margin-bottom:14px}
-.hero h1{font-size:clamp(40px,11vw,76px);line-height:1.04;color:var(--cream)}
-.hero h1 em{color:var(--peach)}
-.hero p.sub{font-size:clamp(17px,4.4vw,20px);margin:18px 0 28px;color:rgba(255,246,232,.82);max-width:30ch}
-.store{display:inline-flex;align-items:center;gap:12px;text-decoration:none;background:var(--cream);color:var(--b2);
-padding:13px 24px 13px 20px;border-radius:999px;font-weight:600;box-shadow:0 14px 34px rgba(10,18,50,.35),0 0 0 1px rgba(255,255,255,.4) inset;transition:transform .2s,box-shadow .2s}
-.store:hover{transform:translateY(-2px);box-shadow:0 18px 40px rgba(10,18,50,.42)}
-.store svg{width:26px;height:26px;fill:currentColor;flex:none}
-.store small{display:block;font-size:11px;font-weight:500;letter-spacing:.04em;opacity:.7;line-height:1.1}
-.store b{display:block;font-size:19px;line-height:1.15;font-weight:600}
-.store.dark{background:var(--blue);color:#fff;box-shadow:0 14px 30px rgba(51,71,143,.35)}
-.hero-art{display:flex;justify-content:center}
+nav.top{display:flex;align-items:center;justify-content:space-between;padding:calc(18px + env(safe-area-inset-top)) 0 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-size:20px;font-weight:600;color:var(--blue)}
+.brand img{width:36px;height:36px;border-radius:10px;box-shadow:0 6px 16px rgba(34,49,106,.25)}
+nav.top .links{display:flex;gap:6px;align-items:center;font-size:14px}
+nav.top .links a{text-decoration:none;color:var(--mute);padding:8px 12px;border-radius:99px}
+nav.top .links a:hover{background:rgba(51,71,143,.07);color:var(--blue)}
+nav.top .links a.by{background:#fff;color:var(--blue);font-weight:600;box-shadow:0 0 0 1px rgba(51,71,143,.12)}
 
-/* phone frames */
-.phone{position:relative;width:min(100%,270px);aspect-ratio:9/18.5;border-radius:40px;padding:9px;background:linear-gradient(160deg,#2a3a7e,#141c42);
-box-shadow:0 30px 60px -18px rgba(20,28,66,.45),0 0 0 1.5px rgba(255,255,255,.12) inset}
-.phone:before{content:"";position:absolute;top:17px;left:50%;transform:translateX(-50%);width:34%;height:20px;border-radius:99px;background:#0c1230;z-index:2}
-.screen{width:100%;height:100%;border-radius:32px;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:44px 18px 26px;text-align:center}
-.screen.hero-s{background:linear-gradient(170deg,var(--b1),var(--b2));color:var(--cream)}
-.screen.hero-s img.ic{width:96px;height:96px;border-radius:24px;box-shadow:0 12px 30px rgba(0,0,0,.35)}
-.screen.hero-s .t{font-family:var(--serif);font-size:22px;line-height:1.1}.screen.hero-s .t em{color:var(--peach)}
-.hero .phone{transform:rotate(3deg)}
-.glow{position:absolute;inset:auto;width:130%;aspect-ratio:1;border-radius:50%;background:radial-gradient(closest-side,rgba(241,168,120,.35),transparent);z-index:0}
+.hero-grid{display:grid;gap:34px;padding:38px 0 40px;align-items:center}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;font-weight:600}
+.hero h1{font-size:clamp(44px,12.5vw,84px);line-height:1.02}
+.hero p.sub{font-size:clamp(18px,4.6vw,22px);margin:20px 0 30px;color:var(--mute);max-width:30ch}
+.stores{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.stores a.appstore img{height:54px;width:auto}
+.stores a.appstore{display:block;transition:transform .2s}.stores a.appstore:hover{transform:translateY(-2px)}
+.soon{display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 20px 0 16px;border-radius:12px;border:1.5px dashed rgba(51,71,143,.28);background:rgba(255,255,255,.5);color:#8a92a6;cursor:default;user-select:none}
+.soon svg{width:24px;height:24px;fill:#a7aebf;flex:none}
+.soon small{display:block;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;line-height:1.1}
+.soon b{display:block;font-size:17px;font-weight:600;line-height:1.15}
+.note{font-size:13px;color:var(--mute);margin-top:16px}
 
-/* features */
-.features{padding:64px 0 24px}
+/* app screens, shown as soft cards */
+.screen{border-radius:30px;overflow:hidden;background:#fff;box-shadow:0 40px 70px -26px rgba(34,49,106,.38),0 10px 24px -10px rgba(34,49,106,.18),0 0 0 1px rgba(255,255,255,.9) inset,0 0 0 1px rgba(51,71,143,.08)}
+.screen img{width:100%;height:auto;aspect-ratio:1320/2868}
+.fan{position:relative;height:clamp(420px,112vw,640px);max-width:640px;margin:0 auto;width:100%}
+.fan .screen{position:absolute;width:44%;top:7%}
+.fan .s1{left:-3%;transform:rotate(-8deg);top:12%}
+.fan .s2{left:28%;width:46%;top:0;z-index:2}
+.fan .s3{right:-3%;transform:rotate(8deg);top:12%}
+.fan:before{content:"";position:absolute;left:50%;top:50%;width:90%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(closest-side,rgba(241,168,120,.5),rgba(241,168,120,0))}
+
+.strip{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:8px 0 0;padding:0 0 10px}
+.strip span{font-size:14px;padding:9px 18px;border-radius:99px;background:rgba(255,255,255,.75);box-shadow:0 0 0 1px rgba(51,71,143,.1);color:var(--blue)}
+.strip span i{font-family:var(--serif);color:var(--accent)}
+
+.features{padding:40px 0 10px}
 .feature{display:grid;gap:26px;align-items:center;justify-items:center;padding:40px 0;text-align:center}
-.feature .copy{max-width:420px}
-.num{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--warm);color:#93532E;font-size:13px;font-weight:600;margin-bottom:14px;border:1px solid rgba(241,168,120,.5)}
-.feature h2{font-size:clamp(30px,8vw,46px);line-height:1.1;color:var(--blue)}
-.feature h2 em{color:#93532E}
-.feature p{font-size:18px;color:var(--mute);margin:12px 0 0}
+.feature .copy{max-width:430px}
+.num{display:block;font-family:var(--serif);font-size:15px;letter-spacing:.2em;color:var(--accent);margin-bottom:12px}
+.feature h2{font-size:clamp(34px,9vw,54px);line-height:1.06}
+.feature p{font-size:19px;color:var(--mute);margin:14px 0 0}
 .feature .art{position:relative;width:100%;display:flex;justify-content:center}
-.feature .art:before{content:"";position:absolute;width:min(86%,360px);aspect-ratio:1;border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);z-index:0}
-.feature:nth-child(odd) .art:before{background:radial-gradient(closest-side,rgba(241,168,120,.42),rgba(241,168,120,0))}
-.feature:nth-child(even) .art:before{background:radial-gradient(closest-side,rgba(51,71,143,.16),rgba(51,71,143,0))}
-.feature .phone{z-index:1;width:min(62%,240px)}.feature .copy{order:-1}
-.screen.f{background:linear-gradient(180deg,var(--warm),var(--canvas) 70%);justify-content:center}
-.feature:nth-child(even) .screen.f{background:linear-gradient(180deg,#EEF1FC,var(--canvas) 70%)}
-.screen.f img{width:100%;max-width:210px}
-.screen.f .bar{height:9px;border-radius:9px;background:rgba(51,71,143,.14);width:70%}
-.screen.f .bar.s{width:46%}
-.screen.f .pill{margin-top:8px;height:34px;width:78%;border-radius:99px;background:var(--blue);opacity:.92}
+.feature .art:before{content:"";position:absolute;width:min(110%,520px);aspect-ratio:1;border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%)}
+.feature:nth-child(odd) .art:before{background:radial-gradient(closest-side,rgba(241,168,120,.45),rgba(241,168,120,0))}
+.feature:nth-child(even) .art:before{background:radial-gradient(closest-side,rgba(143,160,225,.34),rgba(143,160,225,0))}
+.feature .screen{position:relative;width:min(66%,270px)}
+.feature .copy{order:-1}
 
-/* cta */
-.cta{margin:48px 0 0;background:linear-gradient(165deg,var(--b1),var(--b2));color:var(--cream);text-align:center;padding:72px 0 80px;position:relative;overflow:hidden}
-.cta:before{content:"";position:absolute;inset:0;background:radial-gradient(420px 320px at 50% 0,rgba(241,168,120,.35),transparent 70%)}
-.cta .wrap{position:relative}
-.cta img{width:84px;height:84px;border-radius:22px;margin:0 auto 22px;box-shadow:0 14px 34px rgba(0,0,0,.35)}
-.cta h2{font-size:clamp(32px,8.5vw,52px);line-height:1.1}.cta h2 em{color:var(--peach)}
-.cta p{color:rgba(255,246,232,.8);margin:12px 0 28px;font-size:18px}
-footer{background:var(--b2);color:rgba(255,246,232,.7);font-size:14px;padding:26px 0 calc(30px + env(safe-area-inset-bottom))}
-footer .wrap{display:flex;flex-wrap:wrap;gap:12px 22px;justify-content:center;align-items:center}
-footer a{text-decoration:none;color:var(--cream)}footer a:hover{text-decoration:underline}
+.cta{margin:46px 0 0}
+.cta .panel{position:relative;overflow:hidden;text-align:center;padding:64px 22px 70px;border-radius:36px;
+background:radial-gradient(520px 340px at 50% 0,rgba(255,255,255,.7),rgba(255,255,255,0) 70%),linear-gradient(180deg,#FFE9D6,#F8CFA9);box-shadow:0 30px 60px -30px rgba(147,83,46,.35),0 0 0 1px rgba(255,255,255,.7) inset}
+.cta img.ic{width:88px;height:88px;border-radius:22px;margin:0 auto 22px;box-shadow:0 16px 34px rgba(34,49,106,.3)}
+.cta h2{font-size:clamp(34px,8.5vw,56px);line-height:1.08}
+.cta p{color:#6b4a35;margin:12px 0 28px;font-size:18px}
+.cta .stores{justify-content:center}
+.cta .soon{background:rgba(255,255,255,.55)}
 
-@media(min-width:820px){
-.hero-grid{grid-template-columns:1.15fr .85fr;padding:70px 0 110px}
-.hero .phone{width:290px}
-.feature{grid-template-columns:1fr 1fr;gap:64px;padding:56px 0;text-align:left;justify-items:stretch}
-.feature .copy{justify-self:start;max-width:440px}
+footer{padding:40px 0 calc(34px + env(safe-area-inset-bottom));color:var(--mute);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center}
+footer a{text-decoration:none;color:var(--blue)}footer a:hover{text-decoration:underline}
+footer .l{display:flex;gap:20px;flex-wrap:wrap}
+
+@media(min-width:880px){
+.hero-grid{grid-template-columns:1.05fr .95fr;padding:64px 0 70px;gap:30px}
+.feature{grid-template-columns:1fr 1fr;gap:80px;padding:60px 0;text-align:left;justify-items:stretch}
+.feature .copy{justify-self:start}
 .feature:nth-child(even) .art{order:2}.feature:nth-child(even) .copy{order:1;justify-self:end}
-.feature .phone{width:260px}.feature .copy{order:0}
-footer .wrap{justify-content:space-between}
+.feature .copy{order:0}
+.feature .screen{width:290px}
 }
+@media(max-width:560px){nav.top .links a:not(.by){display:none}}
 @media(prefers-reduced-motion:no-preference){
-.hero .phone{animation:float 7s ease-in-out infinite}
-@keyframes float{50%{transform:rotate(3deg) translateY(-10px)}}
+.fan .s2{animation:float 8s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
 }
 </style>
 </head>
@@ -111,55 +114,59 @@ footer .wrap{justify-content:space-between}
 <div class="wrap">
 <nav class="top">
 <a class="brand" href="./"><img src="assets/your-light-icon-b1.png" alt="">Your Light</a>
-<div class="links"><a href="support/">Support</a></div>
+<div class="links"><a href="#features">Features</a><a href="support/">Support</a><a class="by" href="https://chanyenqi018-ui.github.io/">By Chris Chan ↗</a></div>
 </nav>
 <div class="hero-grid">
 <div>
 <span class="eyebrow">For iPhone</span>
 <h1>Small lights, <em>shared gently.</em></h1>
 <p class="sub">One small thing a day, together.</p>
-<a class="store" href="https://apps.apple.com/app/your-light-small-steps/id6811325600" aria-label="Download Your Light on the App Store">
-<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
-<span><small>Download on the</small><b>App Store</b></span></a>
+<div class="stores">
+<a class="appstore" href="https://apps.apple.com/app/your-light-small-steps/id6811325600" aria-label="Download Your Light on the App Store"><img src="assets/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="162" height="54"></a>
+<span class="soon" role="img" aria-label="Google Play: coming soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5v17a1 1 0 0 0 1.5.9l14-8.5a1 1 0 0 0 0-1.8l-14-8.5A1 1 0 0 0 6 3.5z"/></svg><span><small>Android</small><b>Google Play: coming soon</b></span></span>
 </div>
-<div class="hero-art"><div class="phone" role="img" aria-label="Your Light app icon">
-<div class="screen hero-s"><img class="ic" src="assets/your-light-icon-b1.png" alt=""><div class="t">Your <em>Light</em></div></div>
-</div></div>
 </div>
+<div class="fan" role="group" aria-label="Your Light app screens">
+<div class="screen s1"><img src="assets/screens/games.webp" alt="Games that teach" width="600" height="1304"></div>
+<div class="screen s2"><img src="assets/screens/small-things.webp" alt="One small thing, every day" width="600" height="1304"></div>
+<div class="screen s3"><img src="assets/screens/friends.webp" alt="Add a friend" width="600" height="1304"></div>
+</div>
+</div>
+<div class="strip"><span>Small <i>first.</i></span><span>Kind <i>always.</i></span><span>Private <i>by default.</i></span></div>
 </div>
 </header>
 
-<main class="wrap features">
-<!-- Phone screens below are clean placeholders. To use real app screens, replace the contents of each .screen with <img src="assets/screens/NAME.jpg" alt=""> and add class "real". -->
-<section class="feature"><div class="art"><div class="phone"><div class="screen f"><img src="assets/illustrations/small-3-18.svg" alt=""><div class="bar"></div><div class="bar s"></div></div></div></div>
-<div class="copy"><span class="num">1</span><h2>Small lights, <em>shared gently.</em></h2><p>Share a small win with people you trust.</p></div></section>
+<main class="wrap features" id="features">
+<section class="feature"><div class="art"><div class="screen"><img src="assets/screens/small-things.webp" alt="One small thing, every day" loading="lazy" width="600" height="1304"></div></div>
+<div class="copy"><span class="num">01</span><h2>One small thing, <em>every day.</em></h2><p>A tiny step you can do right now.</p></div></section>
 
-<section class="feature"><div class="art"><div class="phone"><div class="screen f"><img src="assets/illustrations/small-2-18.svg" alt=""><div class="bar"></div><div class="pill"></div></div></div></div>
-<div class="copy"><span class="num">2</span><h2>One small thing, <em>every day.</em></h2><p>Make it smaller when you need to.</p></div></section>
+<section class="feature"><div class="art"><div class="screen"><img src="assets/screens/games.webp" alt="Learn by playing" loading="lazy" width="600" height="1304"></div></div>
+<div class="copy"><span class="num">02</span><h2>Learn by <em>playing.</em></h2><p>Every lesson has a game.</p></div></section>
 
-<section class="feature"><div class="art"><div class="phone"><div class="screen f"><img src="assets/illustrations/small-5-19.svg" alt=""><div class="bar"></div><div class="bar s"></div></div></div></div>
-<div class="copy"><span class="num">3</span><h2>Notice <em>how you feel.</em></h2><p>A quick check-in. No scores.</p></div></section>
+<section class="feature"><div class="art"><div class="screen"><img src="assets/screens/celebrate.webp" alt="Every step counts" loading="lazy" width="600" height="1304"></div></div>
+<div class="copy"><span class="num">03</span><h2>Every step <em>counts.</em></h2><p>Finish a chapter, earn baby lights.</p></div></section>
 
-<section class="feature"><div class="art"><div class="phone"><div class="screen f"><img src="assets/illustrations/small-5-20.svg" alt=""><div class="bar"></div><div class="pill"></div></div></div></div>
-<div class="copy"><span class="num">4</span><h2>Friends, <em>only by invitation.</em></h2><p>QR code or link. Nobody can follow you.</p></div></section>
+<section class="feature"><div class="art"><div class="screen"><img src="assets/screens/your-light.webp" alt="Small moments, kept" loading="lazy" width="600" height="1304"></div></div>
+<div class="copy"><span class="num">04</span><h2>Small moments, <em>kept.</em></h2><p>See your week light up.</p></div></section>
 
-<section class="feature"><div class="art"><div class="phone"><div class="screen f"><img src="assets/illustrations/small-6-16.svg" alt=""><div class="bar"></div><div class="bar s"></div></div></div></div>
-<div class="copy"><span class="num">5</span><h2>A gentle nudge, <em>not noise.</em></h2><p>Up to two reminders, at times you choose.</p></div></section>
+<section class="feature"><div class="art"><div class="screen"><img src="assets/screens/languages.webp" alt="English, Bahasa Melayu and Chinese" loading="lazy" width="600" height="1304"></div></div>
+<div class="copy"><span class="num">05</span><h2>Speak <em>your language.</em></h2><p>English, Bahasa Melayu, 简体中文.</p></div></section>
 
-<section class="feature"><div class="art"><div class="phone"><div class="screen f"><img src="assets/illustrations/small-4-20.svg" alt=""><div class="bar"></div><div class="bar s"></div></div></div></div>
-<div class="copy"><span class="num">6</span><h2>Speaks <em>your language.</em></h2><p>English, Bahasa Melayu, 简体中文.</p></div></section>
+<section class="feature"><div class="art"><div class="screen"><img src="assets/screens/friends.webp" alt="Add a friend" loading="lazy" width="600" height="1304"></div></div>
+<div class="copy"><span class="num">06</span><h2>Better <em>together.</em></h2><p>Share small wins with people you trust.</p></div></section>
 </main>
 
-<section class="cta"><div class="wrap">
-<img src="assets/your-light-icon-b1.png" alt="Your Light">
+<section class="cta"><div class="wrap"><div class="panel">
+<img class="ic" src="assets/your-light-icon-b1.png" alt="Your Light">
 <h2>Light one <em>small thing</em> today.</h2>
 <p>Now on the App Store.</p>
-<a class="store" href="https://apps.apple.com/app/your-light-small-steps/id6811325600" aria-label="Download Your Light on the App Store">
-<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
-<span><small>Download on the</small><b>App Store</b></span></a>
-</div></section>
+<div class="stores">
+<a class="appstore" href="https://apps.apple.com/app/your-light-small-steps/id6811325600" aria-label="Download Your Light on the App Store"><img src="assets/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="162" height="54"></a>
+<span class="soon" role="img" aria-label="Google Play: coming soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5v17a1 1 0 0 0 1.5.9l14-8.5a1 1 0 0 0 0-1.8l-14-8.5A1 1 0 0 0 6 3.5z"/></svg><span><small>Android</small><b>Google Play: coming soon</b></span></span>
+</div>
+</div></div></section>
 
-<footer><div class="wrap"><span>© 2026 Your Light</span>
-<span style="display:flex;gap:20px;flex-wrap:wrap"><a href="support/">Support</a><a href="privacy/">Privacy Policy</a><a href="terms/">Terms of Use</a><a href="mailto:chanyenqi018@gmail.com">chanyenqi018@gmail.com</a></span></div></footer>
+<footer><div class="wrap"><span>© 2026 Your Light · Product by <a href="https://chanyenqi018-ui.github.io/">Chris Chan</a></span>
+<span class="l"><a href="support/">Support</a><a href="privacy/">Privacy Policy</a><a href="terms/">Terms of Use</a><a href="https://chanyenqi018-ui.github.io/">Portfolio &amp; résumé</a><a href="mailto:chanyenqi018@gmail.com">chanyenqi018@gmail.com</a></span></div></footer>
 </body>
 </html>

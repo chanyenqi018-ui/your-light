@@ -18,8 +18,8 @@ a.btn{display:block;text-decoration:none;font-weight:600;font-size:17px;border-r
 <p id="intro">One small thing a day, together.</p>
 <a id="open" class="btn primary" hidden>Add friend in Your Light</a>
 <div id="stores"><p id="storeNote" style="margin:18px 0 4px">Don’t have Your Light yet?</p>
-<a id="ios" class="btn store" href="#">Download on the App Store</a>
-<a id="android" class="btn store" href="#" hidden>Get it on Google Play</a></div>
+<a id="ios" class="btn store" href="https://apps.apple.com/app/id6811325600">Download on the App Store</a>
+<a id="android" class="btn store" href="https://play.google.com/store/apps/details?id=com.warrioryenqi.yourlight" hidden>Get it on Google Play</a></div>
 <div id="code" class="code" hidden></div>
 <script>
 // Store links: fill in once the app is live on each store.
@@ -35,4 +35,4 @@ if(/^[A-Z2-9]{8}$/.test(code)){
   // One step: if Your Light is installed it opens straight to "add friend"; if not, the page stays and shows the store.
   if(isIOS||isAndroid){setTimeout(()=>{location.href=app},300);}
 }else if(code){document.getElementById('intro').textContent='This invite link is incomplete. Ask your friend to share it again.';}
-</script></main></body></html>
+</script><p style="margin-top:32px;font-size:13px;opacity:.7">Your Light · Product by <a href="https://chanyenqi018-ui.github.io/">Chris Chan</a> · <a href="../">Home</a></p></main></body></html>
